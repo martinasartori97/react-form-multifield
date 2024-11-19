@@ -9,13 +9,17 @@ const articles = [
   'react',
 ];
 
+
+
 function App() {
 
 
-  const [title, setTitle] = useState(' React Blog Form')
+  const [title, setTitle] = useState('')
   const [newArticle, setNewArticle] = useState('');
   const [image, setImage] = useState('');
   const [content, setContent] = useState('')
+  const [category, setCategory] = useState('');
+
 
 
 
@@ -45,9 +49,15 @@ function App() {
 
   }
 
-  function handleContentChange(e) {
+  function handleContentOnChange(e) {
     console.log(e);
     setContent(e.target.value)
+
+  }
+
+  function handleCategoryOnChange(e) {
+    console.log(e);
+    setCategory(e.target.value)
 
   }
 
@@ -66,14 +76,14 @@ function App() {
 
         <div className="form-floating mb-3">
 
-          <input type="text" id="image" value={image} onChange={e => setImage(e.target.value)} />
+          <input type="text" className="form-control" value={image} onChange={e => setImage(e.target.value)} />
           <label className="img" htmlFor="floatingInputDisabled">insert the image</label>
 
         </div>
 
 
         <div className="form-floating mb-3">
-          <input type="email" className="form-control" id="floatingInputDisabled" placeholder=""></input>
+          <input type="text" className="form-control" value={content} onChange={e => setContent(e.target.value)} />
           <label htmlFor="floatingInputDisabled">content</label>
         </div>
 
@@ -87,25 +97,25 @@ function App() {
 
 
         <div className="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></input>
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
           <label className="form-check-label" for="flexCheckDefault">
             Default checkbox
           </label>
         </div>
         <div className="form-check">
-          <input className="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked></input>
+          <input className="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
           <label className="form-check-label" for="flexCheckChecked">
             Checked checkbox
           </label>
         </div>
         <div className="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></input>
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
           <label className="form-check-label" for="flexCheckDefault">
             Default checkbox
           </label>
         </div>
         <div className="form-check">
-          <input className="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked></input>
+          <input className="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
           <label className="form-check-label" for="flexCheckChecked">
             Checked checkbox
           </label>
