@@ -23,17 +23,17 @@ function App() {
 
 
 
+  function handleTitleOnChange(e) {
+    console.log(e);
+    setTitle(e.target.value)
+
+  }
+
   function addArticle(e) {
     e.preventDefault()
     console.log(articles);
 
 
-
-  }
-
-  function handleTitleChange(e) {
-    console.log(e);
-    setTitle(e.target.value)
 
   }
 
