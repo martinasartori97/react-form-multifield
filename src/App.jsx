@@ -16,12 +16,16 @@ function App() {
     e.preventDefault()
     console.log(articles);
 
+
+
   }
 
 
 
 
   const [title, setTitle] = useState(' React Blog Form')
+  const [newArticle, setNewArticle] = useState('');
+
 
   function handleTitleChange(e) {
     console.log(e);
