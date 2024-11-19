@@ -14,7 +14,7 @@ function App() {
 
   const [title, setTitle] = useState(' React Blog Form')
   const [newArticle, setNewArticle] = useState('');
-  const [image, setImage] = useState('');
+  const [image, setImage] = useState('null');
 
 
 
