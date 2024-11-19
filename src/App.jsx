@@ -78,6 +78,41 @@ function App() {
         </div>
 
 
+        <select className="form-select" aria-label="Default select example">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+
+
+        <div className="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></input>
+          <label className="form-check-label" for="flexCheckDefault">
+            Default checkbox
+          </label>
+        </div>
+        <div className="form-check">
+          <input className="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked></input>
+          <label className="form-check-label" for="flexCheckChecked">
+            Checked checkbox
+          </label>
+        </div>
+        <div className="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></input>
+          <label className="form-check-label" for="flexCheckDefault">
+            Default checkbox
+          </label>
+        </div>
+        <div className="form-check">
+          <input className="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked></input>
+          <label className="form-check-label" for="flexCheckChecked">
+            Checked checkbox
+          </label>
+        </div>
+
+
+
 
       </div>
 
