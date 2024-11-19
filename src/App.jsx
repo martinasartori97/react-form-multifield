@@ -14,7 +14,8 @@ function App() {
 
   const [title, setTitle] = useState(' React Blog Form')
   const [newArticle, setNewArticle] = useState('');
-  const [image, setImage] = useState('null');
+  const [image, setImage] = useState('');
+  const [content, setContent] = useState('')
 
 
 
@@ -44,6 +45,12 @@ function App() {
 
   }
 
+  function handleContentChange(e) {
+    console.log(e);
+    setContent(e.target.value)
+
+  }
+
   return (
     <>
       <div className="container">
@@ -58,9 +65,18 @@ function App() {
 
 
         <div className="form-floating mb-3">
-          <input type="email" className="form-control" id="floatingInputDisabled" placeholder="name@example.com"></input>
+
+          <input type="text" className="form-control" id="floatingInputDisabled" placeholder=""></input>
           <label for="floatingInputDisabled">insert the image</label>
         </div>
+
+
+        <div className="form-floating mb-3">
+          <input type="email" className="form-control" id="floatingInputDisabled" placeholder=""></input>
+          <label for="floatingInputDisabled">content</label>
+        </div>
+
+
 
       </div>
 
