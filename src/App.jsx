@@ -67,7 +67,7 @@ function App() {
         <div className="form-floating mb-3">
 
           <input type="text" id="image" value={image} onChange={e => setImage(e.target.value)} />
-          <label htmlFor="floatingInputDisabled">insert the image</label>
+          <label className="img" htmlFor="floatingInputDisabled">insert the image</label>
 
         </div>
 
