@@ -39,7 +39,7 @@ function App() {
 
   }
 
-  function handleImageChange(e) {
+  function handleImageOnChange(e) {
     console.log(e);
     setImage(e.target.value)
 
@@ -66,8 +66,9 @@ function App() {
 
         <div className="form-floating mb-3">
 
-          <input type="text" className="form-control" id="floatingInputDisabled" placeholder=""></input>
+          <input type="text" id="image" value={image} onChange={e => setImage(e.target.value)} />
           <label htmlFor="floatingInputDisabled">insert the image</label>
+
         </div>
 
 
