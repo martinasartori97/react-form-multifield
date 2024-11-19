@@ -12,6 +12,11 @@ const articles = [
 function App() {
 
 
+  const [title, setTitle] = useState(' React Blog Form')
+  const [newArticle, setNewArticle] = useState('');
+
+
+
   function addArticle(e) {
     e.preventDefault()
     console.log(articles);
@@ -19,13 +24,6 @@ function App() {
 
 
   }
-
-
-
-
-  const [title, setTitle] = useState(' React Blog Form')
-  const [newArticle, setNewArticle] = useState('');
-
 
   function handleTitleChange(e) {
     console.log(e);
@@ -49,9 +47,14 @@ function App() {
 
         <ul className="list-group">
           {articles.map((article, index) => <li key={index} className="list-group-item">{article}</li>)}
-
-
         </ul>
+
+
+        <div className="form-floating mb-3">
+          <input type="email" className="form-control" id="floatingInputDisabled" placeholder="name@example.com" disabled></input>
+          <label for="floatingInputDisabled">Email address</label>
+        </div>
+
       </div>
 
     </>
